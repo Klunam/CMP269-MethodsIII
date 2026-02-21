@@ -1,5 +1,5 @@
-Bruce Wayne 26 10 1
-John Doe 1 7 100
-Barry Alen 1 ERROR 23
-Tony Stark 70 90 20
-Mark Greyson 90 35 27
+Bruce Wayne 90 88 82
+John Doe 72 87 100
+Barry Alen 100 ERROR 99
+Tony Stark 100 90 110
+Mark Greyson 90 88 96
