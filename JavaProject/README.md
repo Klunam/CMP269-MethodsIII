@@ -1,11 +1,10 @@
-#Lehman Multi-Platform Chat System,
+Lehman ChatApp
 
-Used Swing instead of JavaFx/Graddle
+Used Swing instead of JavaFx/Graddle, Swing is built in Java
 
 
 How to run:
-In terminal cd into JavaProject,
-open 3 terminals run the in order
+In terminal cd into JavaProject, open 3 terminals run them in order.
 
 # Terminal 1 - Starting the server first: javac ChatServer.java && java ChatServer
 
@@ -38,7 +37,6 @@ Terminal 3:
 c ChatApp.java && java ChatApp
 SERVER: Enter your username:
 KevinM13
-
 Hello
 
 
