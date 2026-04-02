@@ -10,14 +10,12 @@ import io.ktor.server.routing.*
 import java.io.ByteArrayOutputStream
 import java.nio.file.FileSystems
 
-
 fun saveQRCode(content: String, fileName: String) {
     val writer = QRCodeWriter()
     val bitMatrix = writer.encode(content, BarcodeFormat.QR_CODE, 300, 300)
     val path = FileSystems.getDefault().getPath(fileName)
     MatrixToImageWriter.writeToPath(bitMatrix, "PNG", path)
 }
-
 
 fun generateQRStream(content: String): ByteArrayOutputStream {
     val writer = QRCodeWriter()
@@ -28,8 +26,13 @@ fun generateQRStream(content: String): ByteArrayOutputStream {
 }
 
 fun Application.configureRouting() {
+    
+    // Saves the file when the server starts up
+    saveQRCode("kevin.mitrecorona@lc.cuny.edu", "my_email.png")
+
     routing {
 
+    
         get("/qr") {
             val text = call.request.queryParameters["text"]
 
