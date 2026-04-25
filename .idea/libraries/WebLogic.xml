@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="WebLogic">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/Kotlin/Excersice2/WebLogic.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
